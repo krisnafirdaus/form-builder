@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "exclude": [
+    "src/**/*.test.tsx",
+    "src/**/*.test.ts",
+    "src/__mocks__/*",
+    "src/setupTests.ts"
+  ],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+	"types": ["vitest/globals"]
+}

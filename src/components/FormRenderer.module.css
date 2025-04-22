@@ -1,0 +1,102 @@
+/* src/components/FormRenderer.module.css */
+.formContainer {
+  background-color: #2f2f2f;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  max-width: 600px; /* Limit form width */
+  margin: 2rem auto; /* Center form */
+  text-align: left;
+}
+
+/* General field wrapper - consider if needed or apply directly in sub-components */
+.formField {
+  margin-bottom: 1.5rem; /* Increased spacing */
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600; /* Make labels bolder */
+  color: #e0e0e0; /* Lighter label color */
+}
+
+.requiredMarker {
+  color: #ff6b6b; /* Red color for required marker */
+  margin-left: 0.25rem;
+}
+
+/* Common styles for text, number, select inputs */
+.formInput,
+.formSelect { /* Renamed from global select */
+  width: 100%;
+  padding: 0.75rem; /* Increased padding */
+  border: 1px solid #444; /* Darker border */
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  background-color: #3a3a3a; /* Darker input background */
+  color: #ffffff; /* White text */
+  font-size: 1rem; /* Ensure consistent font size */
+  font-family: inherit; /* Ensure selects inherit font */
+}
+
+.formInput:focus,
+.formSelect:focus {
+  outline: none;
+  border-color: #7b7bff; /* Highlight focus */
+  box-shadow: 0 0 0 2px rgba(123, 123, 255, 0.2);
+}
+
+.inputError {
+  border-color: #ff6b6b !important; /* Red border for errors, use !important if needed to override */
+}
+
+.inputError:focus {
+   box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.2) !important; /* Red focus shadow */
+}
+
+.errorMessage {
+  color: #ff6b6b; /* Red error text */
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block; /* Ensure it takes space */
+}
+
+.submitButton {
+  display: block; /* Make button block level */
+  width: 100%; /* Full width */
+  padding: 0.8rem 1.5rem; /* Comfortable padding */
+  background-color: #6a6aff; /* Purple button */
+  color: white;
+  border: 1px solid transparent; /* Match global button */
+  border-radius: 4px; /* Smaller radius for consistency? */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit; /* Inherit font */
+  transition: background-color 0.3s ease, border-color 0.25s; /* Combine transitions */
+  margin-top: 1rem; /* Space above button */
+}
+
+.submitButton:hover {
+  background-color: #5050d4; /* Darker purple on hover */
+  border-color: #646cff; /* Match global button hover */
+}
+
+.submitButton:focus,
+.submitButton:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color; /* Match global button focus */
+}
+
+.submitButton:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+  border-color: transparent;
+}
+
+/* Responsive adjustment for form padding */
+@media (max-width: 600px) {
+  .formContainer {
+    padding: 1.5rem;
+  }
+}
