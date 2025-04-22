@@ -1,4 +1,4 @@
-# FeatureByte Frontend Assignment: Schema-Driven Form Builder
+# Schema-Driven Form Builder
 
 This project implements a reusable, schema-driven form rendering component in React with TypeScript, built using Vite.
 
@@ -46,7 +46,7 @@ This project implements a reusable, schema-driven form rendering component in Re
 1.  **Clone the repository or extract the zip file.**
 2.  **Navigate to the project directory:**
     ```bash
-    cd featurebyte-form-builder
+    cd form-builder
     ```
 3.  **Install dependencies:**
     ```bash
